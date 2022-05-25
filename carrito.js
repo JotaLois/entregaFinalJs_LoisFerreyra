@@ -19,7 +19,7 @@ let eleccion = buscarProducto(id);
 let menu_elegido = cargarProductosCarrito();
 menu_elegido.push (eleccion)
 localStorage.setItem("elegidos", JSON.stringify (menu_elegido));
-    
+console.log("agregue producto");  
     
 } 
 

@@ -1,7 +1,7 @@
 //TOASTIFY--------------------------------------------------------------------------------
 Toastify({
     text: "Hora de cenar!",
-    duration: 6000,
+    duration: 10000,
     style: {
         background: "linear-gradient(90deg, rgba(254, 44, 85, 0.602), rgba(37,244,238, 0.602))",
       },
