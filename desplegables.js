@@ -1,3 +1,31 @@
+//TOASTIFY--------------------------------------------------------------------------------
+Toastify({
+    text: "Hora de cenar!",
+    duration: 3000,
+    style: {
+        background: "linear-gradient(90deg, rgba(254, 44, 85, 0.602), rgba(37,244,238, 0.602))",
+      },
+    offset: {
+      x: '55em', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+      y: '20em' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+    },
+    onClick: () => {
+           
+        Toastify({
+            text: 'Presione el dia para ver el menu!',
+            duration: 1500,
+            style: {
+                background: "linear-gradient(90deg, rgba(254, 44, 85, 0.602), rgba(37,244,238, 0.602))",
+              },
+            offset: {
+                x: '55em', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+                y: '20em' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+              },
+              
+        }).showToast()
+    }
+
+  }).showToast();
 
 let desplegar = document.getElementById("btnPrincipal").addEventListener("click", mostrar,);
 
