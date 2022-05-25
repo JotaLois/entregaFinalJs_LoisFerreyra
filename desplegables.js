@@ -1,6 +1,3 @@
-//alert("A comer");
-
-//Funciones desplegar menues
 
 let desplegar = document.getElementById("btnPrincipal").addEventListener("click", mostrar,);
 
@@ -62,59 +59,6 @@ let hide5 = document.getElementById("btnOcultar5").addEventListener("click", ocu
 function ocultar5(){
     document.getElementById('opcionesViernes').style.visibility ='hidden';
     }
-
-
-
+    
 //desplegar menues - fin ------------------  
-
-//-------------------------------------------------------------------------------------------
-
-/*const agregarAlCarrito = document.querySelectorAll('.agregarProducto');
-agregarAlCarrito.forEach(agregarAlCarrito =>{ 
-    agregarAlCarrito.addEventListener('click', agregarAlCarritoClick);
-    
-})
-
-
-
-function agregarAlCarritoClick(event){
-    const boton = event.target;
-    const card = boton.closest ('.card');
-    const cardImg = card.querySelector ('.card-img-top').src;
-    const cardTitle = card.querySelector ('.card-title').textContent;
-    const cardPrice = card.querySelector ('.card-text').textContent;
-    
-    console.log (agregarAlCarritoClick, cardTitle, cardPrice, cardImg);
-}
-
-
-
-
-
-const carrito = [];
-
-
-function carritoAgregado(){
-        for (const item of carrito){
-            const item = agregarAlCarrito.addEventListener('click', carritoAgregado);
-            carrito.push(agregado);
-            
-        }  
-  
-}
-
-console.log(carrito);
-*/
-//-----------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
- //------------------------------------------------------------------------------------------
 

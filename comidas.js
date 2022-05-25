@@ -1,3 +1,4 @@
+//Arrays de productos
 const menuLunes = [
     {id:1, nombre:"Hamburguesa", imagen:"Hamburguesa.png", precio:700},
     {id:2, nombre:"Muzzarella", imagen:"pizza.jpg",  precio:1250},
@@ -81,7 +82,8 @@ function cargarProductosVierLS() {
     return JSON.parse(localStorage.getItem("menuViernes"));
 }
 
-//Menues
+//Menues---------------------------------------------------------------------------------------------------------------
+
 //LUNES----------------
 function cargarMenuesLun() {
     let platosLunes = cargarProductosLunLS();
@@ -94,7 +96,7 @@ function cargarMenuesLun() {
         <div class="card-body ">
           <h5 class="card-title">${platosLun.nombre}</h5>
           <p class="card-text">$${platosLun.precio}</p>
-          <a href="#" class="btn btn-primary agregarProducto">Comprar</a>
+          <a href="#" class="btn btn-primary agregarProducto" onclick="agregarAlCarrito(${platosLun.id});">Comprar</a>
         </div>
       </div>`;
     }
@@ -185,5 +187,9 @@ function cargarMenuesVier() {
 
     document.getElementById("opcionesViernes").innerHTML = contenido;
 }
-guardarMenuViernesLS(menuJueves);
+guardarMenuViernesLS(menuViernes);
 cargarMenuesVier();
+
+
+
+

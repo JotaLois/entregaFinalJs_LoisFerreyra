@@ -5,11 +5,11 @@
 
 body {
    
-    background-image: url(./images/fondo.jpg);
+    background-image: url(./images/fondo2.png);
     background-size: cover;
     background-position: center;
     width: 80vw;
-    height: 100vh;
+    height: 100%;
     
 }
 
@@ -28,7 +28,7 @@ body {
 
 .cuerpo h1 {
     color: azure;
-    background: linear-gradient( 90deg,#000000, #25F4EE, #FE2C55 );
+    background: linear-gradient(90deg, rgba(254, 44, 85, 0.602), rgba(37,244,238, 0.602));
     font-family:sans-serif;
     font-weight: bold;
     padding: 1rem;
@@ -40,10 +40,7 @@ body {
     margin-right: 5rem;
     text-shadow: 2px 2px 5px black;
     border: groove;
-
 }
-
-
 
 .botones {
     display: flex;
@@ -52,7 +49,6 @@ body {
     margin:1rem 1rem 1rem 2rem;
     width: 75%;
 }
-
 
 .botonesDias{
     display: flex;
@@ -153,14 +149,28 @@ body {
 }
 
 .carritoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 10rem;
-    background: linear-gradient( 90deg,#000000, #25F4EE, #FE2C55 );
     font-family:sans-serif;
     font-weight: bold;
     color: azure;
     text-shadow: 2px 2px 3px black;
     border-radius: 10px;
-    
+}
+
+#carritoParaRellenar {
+    display: flex;
+    align-content: stretch;
+    width: 500px;
+    text-shadow: none;
+    background: linear-gradient(90deg, rgba(254, 44, 85, 0.602), rgba(37,244,238, 0.602));
+}
+
+#vaciarCarrito {
+    width: 500px;
+    height: 75px;
 }
 
 .contacto {
@@ -169,7 +179,7 @@ body {
     align-items: center;
     margin:10rem;
     padding: 1rem;
-    background-color: rgb(56, 56, 131);
+    background-color: rgb(56, 56, 131, 0.602);
     border-radius: 10px;
     width: 500px;
     height: 250px;
