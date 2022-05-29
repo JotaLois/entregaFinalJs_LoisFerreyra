@@ -7,7 +7,7 @@ Toastify({
       },
     offset: {
       x: '55em', 
-      y: '20em' 
+      y: '35em' 
     },
     onClick: () => {
            
@@ -19,7 +19,7 @@ Toastify({
               },
             offset: {
                 x: '55em', 
-                y: '20em' 
+                y: '35em' 
               },
               
         }).showToast()

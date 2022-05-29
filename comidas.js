@@ -87,6 +87,7 @@ function cargarProductosVierLS() {
 //LUNES----------------
 function cargarMenuesLun() {
     let platosLunes = cargarProductosLunLS();
+    
     let contenido = "";
 
     for (const platosLun of platosLunes) {
@@ -105,6 +106,7 @@ function cargarMenuesLun() {
 }
 guardarMenuLunesLS(menuLunes);
 cargarMenuesLun();
+
 
 //MARTES---------------
 function cargarMenuesMar() {
@@ -189,6 +191,8 @@ function cargarMenuesVier() {
 }
 guardarMenuViernesLS(menuViernes);
 cargarMenuesVier();
+
+
 
 
 
